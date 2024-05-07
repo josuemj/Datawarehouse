@@ -4,6 +4,7 @@ CREATE TABLE categories (
     description varchar(255)
 );
 
+
 CREATE TABLE shippers (
     shipperID int PRIMARY KEY,
     companyName varchar(255)
@@ -25,8 +26,7 @@ CREATE TABLE employees (
     title varchar(255),
     city varchar(255),
     country varchar(255),
-    reportsTo int,
-    FOREIGN KEY (reportsTo) REFERENCES employees(employeeID)
+    reportsTo int
 );
 
 CREATE TABLE customers (
