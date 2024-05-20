@@ -64,3 +64,7 @@ ALTER TABLE FactSales
 ADD CONSTRAINT fk_factsales_shipperid
 FOREIGN KEY (shipperID)
 REFERENCES DimShipper (shipperID);
+
+ -- an order might contain various products
+ALTER TABLE factsales
+DROP CONSTRAINT factsales_pkey;
