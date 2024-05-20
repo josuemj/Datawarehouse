@@ -16,7 +16,7 @@ CREATE TABLE DimCustomer (
 );
 
 CREATE TABLE FactSales (
-    SalesID int PRIMARY KEY,
+    SalesID int, --orderid
     date date,
     productID int,
     customerID varchar(10),
